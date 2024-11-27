@@ -1,3 +1,191 @@
-/node_modules/
-/lib/
-.bsb.lock
+;预配置作者
+;毒奶博主
+;limbopro.com
+;09.11.2024 更新   
+;https://t.me/limboprossr 关注更新
+;https://t.me/Adblock4limbo 群组反馈与讨论交流
+
+[general]
+
+#解析器作者 @XIAO_KOP 
+resource_parser_url=https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/resource-parser.js
+
+#IP_API 改自 @XIAO_KOP
+geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://raw.githubusercontent.com/limbopro/QuantumultX/master/Scripts/IP_API.js
+
+
+[dns]
+;no-ipv6
+no-system
+server=223.5.5.5
+server=114.114.114.114
+server=119.29.29.29
+server=[2400:3200:baba::1]
+server=[2400:3200::1]
+
+[policy]
+static=HBO, direct, proxy, reject, 🇺🇸美国04|纽约|高速中转, 🇺🇸美国06|纽约|高速中转, 🇺🇸美国02|费城|高速中转, 🇺🇸美国02|纽约|高速中转, 🇺🇸美国01|纽约|高速中转, 🇺🇸美国05|费城|高速中转, 🇺🇸美国07|费城|高速中转, 🇺🇸美国02|纽瓦克|高速中转, 🇺🇸美国01|纽瓦克|高速中转, 🇺🇸美国07|旧金山|高速中转, 🇺🇸美国06|费利蒙|高速中转, 🇺🇸美国04|费利蒙|高速中转, 🇺🇸美国04|阿什本|高速中转, 🇺🇸美国03|阿什本|高速中转, 🇺🇸美国08|达拉斯|高速中转, 🇺🇸美国01|芝加哥|高速中转, 🇺🇸美国07|圣荷西|高速中转, 🇺🇸美国04|圣荷西|高速中转, img-url=https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/ReverbNation.png
+static=YouTube, direct, proxy, reject, img-url=https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Google_Suite/YouTube.png
+static=Copilot, direct, proxy, reject, img-url=c.square.system
+static=AppleNews, direct, proxy, reject, img-url=https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/Final.png
+static=AppleTV, direct, proxy, reject, img-url=https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/BiliBili.png
+static=OpenAI, direct, proxy, reject, img-url=https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/KittyLink.png
+static=AdvertisingScript, direct, proxy, reject, img-url=https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/Reject.orig.png
+static=🛑 广告拦截, REJECT, PROXY, DIRECT, img-url=https://raw.githubusercontent.com/limbopro/Qure/master/IconSet/Advertising.png
+available=♻️ 故障切换, 无用节点1, 无用节点2, img-url=https://raw.githubusercontent.com/limbopro/Zure/master/IconSet/Available.png
+static=✈️ 机场专线, proxy, direct, ♻️ 故障切换, 🇭🇰 香港宇宙量子专线, 🇭🇰 香港BGP 三网直连1x, 🇺🇸 美国BGP 中转 01 1.5x, 🇺🇸 美国BGP 中转 02 1.5x, 🇺🇸 美国BGP 中转 03 1.5x, 🇺🇸 美国BGP 中转 04 1.5x, 🇨🇳 台湾BGP 中转 01 1.5x, 🇨🇳 台湾BGP 中转 02 1.5x, 🇯🇵 日本BGP 中转 01 1.5x, 🇯🇵 日本BGP 中转 02 1.5x, 🇸🇬 新加坡BGP 中转 01 1.5x, 🇸🇬 新加坡BGP 中转 02 1.5x, 🇭🇰香港BGP 中转 01 1.5x, 🇭🇰香港BGP 中转 02 1.5x, 🇭🇰香港BGP 中转 03 1.5x, 🇭🇰香港BGP 中转 04 1.5x, img-url=https://raw.githubusercontent.com/limbopro/Zure/master/IconSet/rocket.png
+static=🍎 苹果服务, DIRECT, PROXY, ♻️ 故障切换, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Apple.png
+static=🤖 AI Platforms, proxy, direct, 🇺🇸美国07|洛杉矶|高速中转, 🇺🇸美国08|洛杉矶|高速中转, 🇺🇸美国05|洛杉矶|高速中转, 🇺🇸美国03|洛杉矶|高速中转, 🇺🇸美国01|洛杉矶|高速中转, 🇺🇸美国03|旧金山|高速中转, 🇺🇸美国06|旧金山|高速中转, 🇺🇸美国01|纽瓦克|高速中转, 🇺🇸美国08|旧金山|高速中转, 🇺🇸美国05|旧金山|高速中转, img-url=https://raw.githubusercontent.com/limbopro/Zure/master/AI%20Platforms.png
+static=🎥 Netflix, proxy, 🇸🇬VIP新加坡A07|移动内网专线, 🇸🇬VIP新加坡A06|移动内网专线, 🇸🇬VIP新加坡A04|移动内网专线, 🇸🇬VIP新加坡A05|移动内网专线, 🇸🇬VIP新加坡B06|移动内网专线, 🇸🇬VIP新加坡B05|移动内网专线, 🇸🇬VIP新加坡B03|移动内网专线, 🇸🇬VIP新加坡B02|移动内网专线, 🇹🇼VIP台湾05|联通内网专线, 🇹🇼VIP台湾04|联通内网专线, 🇹🇼VIP台湾03|联通内网专线, 🇹🇼VIP台湾02|联通内网专线, 🇹🇼VIP台湾01|联通内网专线, 🇭🇰VIP香港02|10G带宽|深港内网专线, 🇭🇰VIP香港03|10G带宽|深港内网专线, 🇭🇰VIP香港05|10G带宽|深港内网专线, 🇭🇰VIP香港07|10G带宽|深港内网专线, 🇭🇰VIP香港06|10G带宽|深港内网专线, 🇭🇰VIP香港01|10G带宽|广港内网专线, 🇭🇰VIP香港02|10G带宽|广港内网专线, 🇭🇰VIP香港03|10G带宽|广港内网专线, 🇭🇰VIP香港08|10G带宽|深港内网专线, 🇭🇰VIP香港04|10G带宽|广港内网专线, 🇭🇰VIP香港06|10G带宽|广港内网专线, 🇭🇰VIP香港08|10G带宽|广港内网专线, 🇭🇰VIP香港01|ICABLE|动态家宽, 🇭🇰VIP香港05|10G带宽|广港内网专线, 🇭🇰VIP香港07|10G带宽|广港内网专线, 🇭🇰VIP香港05|ICABLE|动态家宽, 🇭🇰VIP香港04|ICABLE|动态家宽, 🇭🇰VIP香港06|ICABLE|动态家宽, 🇭🇰VIP香港08|ICABLE|动态家宽, 🇸🇬VIP新加坡05|联通内网专线, 🇸🇬VIP新加坡06|联通内网专线, 🇸🇬VIP新加坡03|联通内网专线, 🇸🇬VIP新加坡02|联通内网专线, 🇭🇰VIP香港06|HKBN|动态家宽, 🇭🇰VIP香港07|HKBN|动态家宽, 🇭🇰VIP香港08|HKBN|动态家宽, 🇭🇰VIP香港01|HGC|动态家宽, 🇭🇰VIP香港03|HGC|动态家宽, 🇭🇰VIP香港04|HGC|动态家宽, 🇭🇰VIP香港07|HGC|动态家宽, 🇭🇰VIP香港01|CERA|移动内网专线, 🇭🇰VIP香港03|CERA|移动内网专线, 🇭🇰VIP香港05|CERA|移动内网专线, 🇭🇰VIP香港06|CERA|移动内网专线, 🇭🇰VIP香港08|CERA|移动内网专线, 🇭🇰VIP香港01|DMIT|移动内网专线, 🇭🇰VIP香港03|DMIT|移动内网专线, 🇭🇰VIP香港04|Gcore|移动内网专线, 🇭🇰VIP香港03|Gcore|移动内网专线, 🇭🇰VIP香港02|Gcore|移动内网专线, 🇭🇰VIP香港07|Gcore|移动内网专线, 🇭🇰VIP香港08|Gcore|移动内网专线, 🇸🇬VIP新加坡B01|移动内网专线, 🇸🇬VIP新加坡B04|移动内网专线, 🇸🇬VIP新加坡B07|移动内网专线, 🇸🇬VIP新加坡A03|移动内网专线, img-url=https://raw.githubusercontent.com/limbopro/Zure/master/IconSet/Netflix_Letter.png
+static=🐭 Disney+, proxy, 🇹🇼VIP台湾01|台北|移动内网专线, 🇹🇼VIP台湾02|台北|移动内网专线, 🇹🇼VIP台湾03|台北|移动内网专线, 🇹🇼VIP台湾04|台北|移动内网专线, 🇹🇼VIP台湾05|台北|移动内网专线, 🇹🇼VIP台湾06|台北|移动内网专线, 🇹🇼VIP台湾08|台北|移动内网专线, 🇹🇼VIP台湾01|高雄|移动内网专线, 🇹🇼VIP台湾02|高雄|移动内网专线, 🇹🇼VIP台湾03|高雄|移动内网专线, 🇹🇼VIP台湾04|高雄|移动内网专线, 🇹🇼VIP台湾05|高雄|移动内网专线, 🇹🇼VIP台湾07|台北|移动内网专线, 🇹🇼VIP台湾06|高雄|移动内网专线, 🇹🇼VIP台湾07|高雄|移动内网专线, 🇹🇼VIP台湾08|高雄|移动内网专线, 🇹🇼VIP台湾01|台南|移动内网专线, 🇹🇼VIP台湾02|台南|移动内网专线, 🇹🇼VIP台湾03|台南|移动内网专线, 🇹🇼VIP台湾04|台南|移动内网专线, 🇹🇼VIP台湾05|台南|移动内网专线, 🇹🇼VIP台湾06|台南|移动内网专线, 🇹🇼VIP台湾07|台南|移动内网专线, 🇹🇼VIP台湾08|台南|移动内网专线, img-url=https://raw.githubusercontent.com/limbopro/Zure/master/IconSet/Disney+.png
+static=🎵 TikTok, PROXY, img-url=https://raw.githubusercontent.com/limbopro/Zure/master/IconSet/TikTok.png
+static=🐟 Final, PROXY, ♻️ 故障切换, DIRECT, 🛑 广告拦截, img-url=https://raw.githubusercontent.com/limbopro/Zure/master/IconSet/Final.png
+
+[server_remote]
+https://sub.store/download/telegram_1732480813368, tag=TG FREE, update-interval=172800, opt-parser=true, enabled=true
+https://45.88.192.25:21666/api/v1/client/subscribe?token=23a38089f6bdf3fab139bff57eec8292, tag=91, update-interval=172800, opt-parser=true, enabled=true
+https://subscription-gov.lianjiasub.work/api/v1/client/subscribe?token=d5aa6b7da11c298d253c9ecb41b0b8f4, tag=廉价机场, update-interval=172800, opt-parser=false, enabled=true
+
+[filter_remote]
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/HBOUSA/HBOUSA.list, tag=HBO, update-interval=172800, opt-parser=true, enabled=true
+HBO.snippet, tag=HBO Max, update-interval=172800, opt-parser=true, enabled=false
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/YouTube/YouTube.list, tag=YouTube, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Copilot/Copilot.list, tag=copilot, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/AppleNews/AppleNews.list, tag=appleNews, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/AppleTV/AppleTV.list, tag=AppleTV, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/ddgksf2013/Filter/master/OpenAi.list, tag=OpenAi, update-interval=172800, opt-parser=false, enabled=true
+https://ghp.ci/raw.githubusercontent.com/8680/GOODBYEADS/master/data/rules/qx.list, tag=goodbyeAD, force-policy=🛑 广告拦截, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/QuantumultX/AllInOne/AllInOne.list, tag=Allinone, force-policy=AdvertisingScript, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/limbopro/Profiles4limbo/main/airports.list, tag=机场专线, force-policy=✈️ 机场专线, enabled=true
+https://limbopro.com/Adblock4limbo.list, tag=毒奶特供(去网页广告计划), force-policy=🛑 广告拦截, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Netflix/Netflix.list, tag=🎥 Netflix, force-policy=🎥 Netflix, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Disney/Disney.list, tag=🐭 Disney+, force-policy=🐭 Disney+, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/TikTok/TikTok.list,tag=🎵 TikTok, force-policy=🎵 TikTok, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list, tag=🍎 苹果服务, force-policy=🍎 苹果服务, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/OpenAI/OpenAI.list, tag=🤖 AI Platforms, force-policy=🤖 AI Platforms, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/BardAI/BardAI.list, tag=🤖 AI Platforms, force-policy=🤖 AI Platforms, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Claude/Claude.list, tag=🤖 AI Platforms, force-policy=🤖 AI Platforms, enabled=true
+https://raw.githubusercontent.com/limbopro/Profiles4limbo/main/AI_Platforms_qx.list, tag=🤖 AI Platforms, force-policy=🤖 AI Platforms, enabled=true
+
+[rewrite_remote]
+https://gist.githubusercontent.com/ddgksf2013/9e0f6c7341beea09a31aa309d9d7f502/raw/buyitunes.js, tag=buyiTune, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/afengye/QX/main/blocker.js, tag=1blocker, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/QuantumultX/AllInOne/AllInOne.conf, tag=blackmatrix, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoMagicShot.js, tag=会员脚本·恢复·MagicShot, update-interval=172800, opt-parser=true, enabled=false
+https://github.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=boxjs, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/Yu9191/Rewrite/main/itunes/Dictionary.js, tag=Dictionary, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/czy13724/Quantumult-X/main/scripts/MondlyPremium.js, tag=Mondly, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/PicsArt.js, tag=PicsArt, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/crossutility/Quantumult-X/master/sample-import-rewrite.snippet, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/zwf234/rules/master/QuantumultX/qxrules.conf, tag=QX, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/afengye/QX/main/tfvpn.js, tag=topfastVPN, update-interval=172800, opt-parser=true, enabled=false
+https://raw.githubusercontent.com/Yu9191/Rewrite/main/m3u8/91aw.js, tag=91系列https://rz37z.kb97o.com, update-interval=172800, opt-parser=true, enabled=false
+https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/peicaise.js, tag=黄瓜视频, update-interval=172800, opt-parser=true, enabled=false
+https://whatshub.top/rewrite/fimo.conf, tag=fimo, update-interval=172800, opt-parser=true, enabled=false
+https://raw.githubusercontent.com/WeiGiegie/666/main/hhmh.js, tag=嘿嘿漫画, update-interval=172800, opt-parser=true, enabled=false
+https://ghproxy.com/https://raw.githubusercontent.com/chxm1023/Script_X/main/Collections.conf, tag=APP解锁合集, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/Guding88/Script/main/APPheji_Guding.sgmodule, tag=Guding88 allin1, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/chxm1023/Script_X/main/Collections.conf, tag=APP解锁合集, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/chxm1023/Rewrite/main/apphud.js, tag=apphud, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/Yu9191/Rewrite/main/itunes/pdfpro.js, tag=PDF PRO, update-interval=172800, opt-parser=true, enabled=true
+898FB9C0D1C1.snippet, tag=emby, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/chxm1023/Rewrite/main/zhinengzhushou.js, tag=智能助手, update-interval=172800, opt-parser=true, enabled=false
+https://raw.githubusercontent.com/chxm1023/Rewrite/main/Grammarly.js, tag=Grammarly, update-interval=172800, opt-parser=true, enabled=false
+https://raw.githubusercontent.com/yqc007/QuantumultX/master/SoulSuperVipCrack.js, tag=Soul, update-interval=172800, opt-parser=true, enabled=false
+https://raw.githubusercontent.com/czy13724/Quantumult-X/main/scripts/chatpdf.js, tag=chatpdf, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/WeiGiegie/666/main/Retouch.js, tag=TouchReTouch, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/WeiGiegie/666/main/sleepcycle.js, tag=Sleepcycle, update-interval=172800, opt-parser=true, enabled=false
+https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/keep.js, tag=keep, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/Yu9191/Rewrite/main/BodyOk.js, tag=WatchFace, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/chxm1023/Rewrite/main/qonversion.js, tag=AnkiPro, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes.js, tag=http抓包, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/chxm1023/Rewrite/main/AdGuard.js, tag=AdGuard, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/Yu9191/Rewrite/main/Revenuecat.js, tag=ChatPub-gpt4o, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/chxm1023/Rewrite/main/adapty.js, tag=AiChatbot, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/Yu9191/Rewrite/main/itunes/CamTranslator.js, tag=camera translate, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js, tag=Avocation, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/yqc007/QuantumultX/master/JiuYiPornVideoCrack.js, tag=91 https://app.auyv.site/i-S9L798, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/Moli-X/Resources/main/Loon/Kuwo/Kuwo.plugin, tag=kuwo, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/Moli-X/Resources/main/Loon/Spotify/Test/Spotify.plugin, tag=Spotify, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/ddgksf2013/Scripts/master/pornhub.js, tag=pornhub, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/Crazy-Z7/Scrip/main/Soul.js, tag=soul, update-interval=172800, opt-parser=true, enabled=true
+https://github.com/zwf234/rules/raw/master/QuantumultX/qxrules.conf, tag=奇心, update-interval=172800, opt-parser=true, enabled=true
+https://github.com/ddgksf2013/dev/raw/master/ForOwnUse.conf, tag=墨鱼, update-interval=172800, opt-parser=true, enabled=true
+https://github.com/Moli-X/Resources/raw/main/Rewrite/Collections.conf, tag=莫离, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Picsart.js, tag=Picsart, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/hlzz.js, tag=航旅追踪, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/SparkMail.js, tag=sparkmail, update-interval=172800, opt-parser=true, enabled=false
+https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/kuwo.js, tag=酷我, update-interval=172800, opt-parser=true, enabled=false
+https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Notability.conf, tag=Notability, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/NobyDa/Script/master/TestFlight/TestFlightAccount.js, tag=Testfligh, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/Yu9191/Rewrite/main/Documents.js, tag=Documents, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/Yu9191/Rewrite/main/PDFexpert.js, tag=PDF, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/tidal.js, tag=Tidal, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoChatPDF.js, tag=会员脚本·恢复·ChatPDF, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoGPTalk.js, tag=会员脚本·恢复·AidoAI, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoPodAI.js, tag=会员脚本·恢复·PodAI, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoWordSnap.js, tag=会员脚本·恢复·WordSnap, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoSintelly.js, tag=会员脚本·恢复·Sintelly, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoTestCamera.js, tag=会员脚本·恢复·WIS, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Nicegrampro.js, tag=Nicegram, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Memrise.js, tag=Memrise, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/PDFExpert.js, tag=PDFexpert, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/wyydcd.js, tag=有道字典, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/kwyy.js, tag=kuwo, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/documents.js, tag=documents, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/lightroom.js, tag=lightroom, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Photoshop.js, tag=photoshopexpress, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/vsco.js, tag=vsco, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/blocker.js, tag=1blocker, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/xmind.js, tag=xmind, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/mtxx.js, tag=美图秀秀, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/89996462/Quantumult-X/main/Eric.conf, tag=Eric, update-interval=172800, opt-parser=true, enabled=true
+https://whatshub.top/rewrite/touchretouch.conf, tag=touchRetouch, update-interval=172800, opt-parser=true, enabled=true
+https://whatshub.top/rewrite/youtube.conf, tag=Youtube, update-interval=172800, opt-parser=true, enabled=true
+https://whatshub.top/rewrite/retake.conf, tag=Retake, update-interval=172800, opt-parser=true, enabled=true
+https://whatshub.top/rewrite/agenda.conf, tag=Agenda, update-interval=172800, opt-parser=true, enabled=true
+https://whatshub.top/rewrite/dayone.conf, tag=Dayone, update-interval=172800, opt-parser=true, enabled=true
+https://whatshub.top/rewrite/keep.conf, tag=keep, update-interval=172800, opt-parser=true, enabled=true
+https://whatshub.top/rewrite/documents.conf, tag=documents, update-interval=172800, opt-parser=true, enabled=true
+https://whatshub.top/rewrite/aptv.conf, tag=aptv, update-interval=172800, opt-parser=false, enabled=true
+https://whatshub.top/rewrite/ydcd.conf, tag=ydce, update-interval=172800, opt-parser=true, enabled=true
+https://whatshub.top/rewrite/memrise.conf, tag=memrise, update-interval=172800, opt-parser=true, enabled=true
+https://whatshub.top/rewrite/aqc.conf, tag=aqc, update-interval=172800, opt-parser=true, enabled=true
+https://whatshub.top/rewrite/1blocker.conf, tag=1blocker, update-interval=172800, opt-parser=true, enabled=true
+https://whatshub.top/rewrite/https.conf, tag=https, update-interval=172800, opt-parser=true, enabled=true
+https://whatshub.top/rewrite/lightroom.conf, tag=lightroom, update-interval=172800, opt-parser=true, enabled=true
+https://whatshub.top/rewrite/grammarly.conf, tag=grammly, update-interval=172800, opt-parser=true, enabled=true
+https://whatshub.top/rewrite/fantastical.conf, tag=fantastical, update-interval=172800, opt-parser=true, enabled=true
+https://whatshub.top/rewrite/accu.conf, tag=accu, update-interval=172800, opt-parser=true, enabled=true
+https://whatshub.top/rewrite/musixmatch.conf, tag=musixmatch, update-interval=172800, opt-parser=true, enabled=true
+https://whatshub.top/rewrite/SpotifyPremium.conf, tag=spotify, update-interval=172800, opt-parser=true, enabled=true
+https://whatshub.top/rewrite/nicegram.conf, tag=nicegramme, update-interval=172800, opt-parser=true, enabled=true
+https://whatshub.top/rewrite/Emby.conf, tag=emby, update-interval=172800, opt-parser=true, enabled=true
+https://whatshub.top/rewrite/kuwo-unlock.conf, tag=kuwo, update-interval=172800, opt-parser=true, enabled=true
+https://whatshub.top/rewrite/adultra.conf, tag=ad, update-interval=172800, opt-parser=true, enabled=true
+https://limbopro.com/Adblock4limbo.conf, tag=毒奶特供(去网页广告计划), enabled=true
+https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/config/QX.snippet, tag=Sub-store(高级订阅管理器), enabled=true
+
+[server_local]
+shadowsocks=example.com:80, method=aes-128-gcm, password=pwd, obfs=ws, fast-open=false, tag=无用节点1
+shadowsocks=example.com:80, method=aes-128-gcm, password=pwd, obfs=ws, fast-open=false, tag=无用节点2
+
+[filter_local]
+geoip, cn, direct
+ip-cidr, 10.0.0.0/8, direct
+ip-cidr, 127.0.0.0/8, direct
+ip-cidr, 172.16.0.0/12, direct
+ip-cidr, 192.168.0.0/16, direct
+ip-cidr, 224.0.0.0/24, direct
+final, 🐟 Final
+
+
+[rewrite_local]
+
+[task_local]
+
+[http_backend]
+
+[mitm]
+passphrase = 463DD8D2
+p12 = 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
