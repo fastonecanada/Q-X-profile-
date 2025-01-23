@@ -1,0 +1,200 @@
+[general]
+
+# 直连网络测试URL
+network_check_url = http://taobao.com/
+
+# 节点延迟测试URL
+server_check_url= http://www.gstatic.com/generate_204
+#server_check_url = http://cp.cloudflare.com/generate_204
+
+# 节点延迟测试超时参数
+server_check_timeout=2000
+
+# 配置文件图标
+profile_img_url = https://raw.githubusercontent.com/curtin110/QuantumultX/refs/heads/main/Curtin.jpg
+
+
+# 资源解析器 @XIAO_KOP 
+resource_parser_url=https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/resource-parser.js
+
+# 节点信息 @XIAO_KOP 
+geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/IP_API.js
+
+# 绕过QuantumultX代理
+excluded_routes=192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, 17.0.0.0/8,239.255.255.250/32, 24.105.30.129/32, 185.60.112.157/32, 185.60.112.158/32, 182.162.132.1/32
+
+# UDP白名单端口列表
+udp_whitelist=1-442, 444-65535
+
+# 不使用fake-ip 及远程解析域名列表
+dns_exclusion_list=*.cmpassport.com, *.jegotrip.com.cn, *.icitymobile.mobi, id6.me, *.pingan.com.cn, *.cmbchina.com, *.localnetwork.uop, mfs.ykimg.com*.ttf, *.icbc.com.cn
+
+# DoH请求头 User-Agent参数
+;doh_user_agent=Agent/1.0
+
+
+[dns]
+# DNS 服务器列表
+server=223.5.5.5
+server=119.29.29.29
+server=114.114.114.114
+server=1.2.4.8
+server=/*.taobao.com/223.5.5.5
+server=/*.tmall.com/223.5.5.5
+server=/*.alipay.com/223.5.5.5
+server=/*.alicdn.com/223.5.5.5
+server=/*.aliyun.com/223.5.5.5
+server=/*.jd.com/119.28.28.28
+server=/*.qq.com/119.28.28.28
+server=/*.tencent.com/119.29.29.29
+server=/*.bilibili.com/119.29.29.29
+server=/hdslb.com/119.29.29.29
+server=/*.163.com/119.29.29.29
+server=/*.126.com/119.29.29.29
+server=/*.126.net/119.29.29.29
+server=/*.127.net/119.29.29.29
+server=/*.netease.com/119.29.29.29
+server=/*.mi.com/119.29.29.29
+server=/*.xiaomi.com/119.29.29.29
+address=/mtalk.google.com/108.177.125.188
+server=/*.icloud.com/119.29.29.29
+server=/*.icloud.com.cn/119.29.29.29
+server=/*.weixin.com/119.29.29.29
+
+
+[policy]
+static=Mailand China, direct, proxy, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Domestic.png
+static=Oversea, direct, proxy, Hong Kong, Taiwan, Japan, Korea, Singapore, United States, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png
+# 策略组配置
+
+static=Apple, direct, proxy, 🇭🇰 香港BGP 三网直连1x, 🇺🇸 美国BGP 中转 01 1.5x, 🇺🇸 美国BGP 中转 02 1.5x, 🇺🇸 美国BGP 中转 04 1.5x, 🇸🇬 新加坡BGP 中转 01 1.5x, 🇸🇬 新加坡BGP 中转 02 1.5x, 🇸🇬VIP新加坡A06|移动内网专线, 🇸🇬VIP新加坡A07|移动内网专线, 🇸🇬VIP新加坡B01|移动内网专线, 🇸🇬VIP新加坡B02|移动内网专线, 🇯🇵日本•大阪05|移动内网专线, 🇯🇵日本•东京06|移动内网专线, 🇯🇵日本•东京07|移动内网专线, 🇯🇵日本•东京08|移动内网专线, 🇹🇼VIP台湾01|联通内网专线, 🇹🇼VIP台湾02|联通内网专线, 🇹🇼VIP台湾04|联通内网专线, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png
+static=Copilot, direct, proxy, 🇺🇸美国06|纽约|高速中转, 🇺🇸美国07|纽约|高速中转, 🇺🇸美国01|费城|高速中转, 🇺🇸美国03|费城|高速中转, 🇺🇸美国02|洛杉矶|高速中转, 🇺🇸美国05|洛杉矶|高速中转, 🇺🇸美国07|洛杉矶|高速中转, 🇺🇸美国06|旧金山|高速中转, 🇺🇸美国08|旧金山|高速中转, 🇺🇸美国02|纽瓦克|高速中转, 🇺🇸美国02|费利蒙|高速中转, 🇺🇸美国04|费利蒙|高速中转, 🇺🇸美国06|费利蒙|高速中转, 🇺🇸美国07|费利蒙|高速中转, 🇺🇸美国03|费利蒙|高速中转, 🇺🇸美国08|西雅图|高速中转, 🇺🇸美国01|纽约|高速中转, 🇺🇸美国02|纽约|高速中转, 🇺🇸美国03|纽约|高速中转, 🇺🇸美国04|纽约|高速中转, 🇺🇸美国05|纽约|高速中转, 🇺🇸美国08|纽约|高速中转, 🇺🇸美国02|费城|高速中转, 🇺🇸美国04|费城|高速中转, 🇺🇸美国05|费城|高速中转, 🇺🇸美国06|费城|高速中转, 🇺🇸美国07|费城|高速中转, 🇺🇸美国08|费城|高速中转, 🇺🇸美国01|洛杉矶|高速中转, 🇺🇸美国03|洛杉矶|高速中转, 🇺🇸美国04|洛杉矶|高速中转, 🇺🇸美国06|洛杉矶|高速中转, 🇺🇸美国08|洛杉矶|高速中转, 🇺🇸美国01|旧金山|高速中转, 🇺🇸美国02|旧金山|高速中转, 🇺🇸美国03|旧金山|高速中转, 🇺🇸美国04|旧金山|高速中转, 🇺🇸美国05|旧金山|高速中转, 🇺🇸美国07|旧金山|高速中转, 🇺🇸美国01|纽瓦克|高速中转, 🇺🇸美国03|纽瓦克|高速中转, 🇺🇸美国05|纽瓦克|高速中转, 🇺🇸美国06|纽瓦克|高速中转, 🇺🇸美国07|纽瓦克|高速中转, 🇺🇸美国08|纽瓦克|高速中转, 🇺🇸美国01|西雅图|高速中转, 🇺🇸美国03|西雅图|高速中转, 🇺🇸美国04|西雅图|高速中转, 🇺🇸美国05|西雅图|高速中转, 🇺🇸美国06|西雅图|高速中转, 🇺🇸美国04|纽瓦克|高速中转, 🇺🇸美国02|西雅图|高速中转, 🇺🇸美国07|西雅图|高速中转, 🇺🇸美国01|费利蒙|高速中转, 🇺🇸美国05|费利蒙|高速中转, 🇺🇸美国08|费利蒙|高速中转, 🇺🇸美国01|达拉斯|高速中转, 🇺🇸美国02|达拉斯|高速中转, 🇺🇸美国04|达拉斯|高速中转, 🇺🇸美国05|达拉斯|高速中转, 🇺🇸美国06|达拉斯|高速中转, 🇺🇸美国03|达拉斯|高速中转, 🇺🇸美国07|达拉斯|高速中转, 🇺🇸美国08|达拉斯|高速中转, 🇺🇸美国01|阿什本|高速中转, 🇺🇸美国03|阿什本|高速中转, 🇺🇸美国04|阿什本|高速中转, 🇺🇸美国05|阿什本|高速中转, 🇺🇸美国06|阿什本|高速中转, 🇺🇸美国07|阿什本|高速中转, 🇺🇸美国08|阿什本|高速中转, 🇺🇸美国01|圣荷西|高速中转, 🇺🇸美国03|圣荷西|高速中转, 🇺🇸美国04|圣荷西|高速中转, 🇺🇸美国05|圣荷西|高速中转, 🇺🇸美国06|圣荷西|高速中转, 🇺🇸美国08|圣荷西|高速中转, 🇺🇸美国01|芝加哥|高速中转, 🇺🇸美国02|芝加哥|高速中转, 🇺🇸美国03|芝加哥|高速中转, 🇺🇸美国04|芝加哥|高速中转, 🇺🇸美国05|芝加哥|高速中转, 🇺🇸美国07|圣荷西|高速中转, 🇺🇸美国06|芝加哥|高速中转, 🇺🇸美国07|芝加哥|高速中转, 🇺🇸美国08|芝加哥|高速中转, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Copilot.png
+static=ChatGPT, proxy, 🇺🇸美国08|纽约|高速中转, 🇺🇸美国07|纽约|高速中转, 🇺🇸美国01|费城|高速中转, 🇺🇸美国02|费城|高速中转, 🇺🇸美国04|费城|高速中转, 🇺🇸美国06|费城|高速中转, 🇺🇸美国07|费城|高速中转, 🇺🇸美国08|费城|高速中转, 🇺🇸美国05|费城|高速中转, 🇺🇸美国03|费城|高速中转, 🇺🇸美国06|纽约|高速中转, 🇺🇸美国05|纽约|高速中转, 🇺🇸美国04|纽约|高速中转, 🇺🇸美国03|纽约|高速中转, 🇺🇸美国02|纽约|高速中转, 🇺🇸美国01|纽约|高速中转, img-url=https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/ChatGPT/ChatGPT3.png
+static=Disney Plus, direct, proxy, 🇹🇼VIP台湾01|高雄|移动内网专线, 🇹🇼VIP台湾02|高雄|移动内网专线, 🇹🇼VIP台湾03|高雄|移动内网专线, 🇹🇼VIP台湾05|高雄|移动内网专线, 🇹🇼VIP台湾06|高雄|移动内网专线, 🇹🇼VIP台湾07|高雄|移动内网专线, 🇹🇼VIP台湾08|高雄|移动内网专线, 🇹🇼VIP台湾04|高雄|移动内网专线, 🇹🇼VIP台湾02|台南|移动内网专线, 🇹🇼VIP台湾03|台南|移动内网专线, 🇹🇼VIP台湾04|台南|移动内网专线, 🇹🇼VIP台湾06|台南|移动内网专线, 🇹🇼VIP台湾01|台南|移动内网专线, 🇹🇼VIP台湾08|台北|移动内网专线, 🇹🇼VIP台湾06|台北|移动内网专线, 🇹🇼VIP台湾08|台南|移动内网专线, 🇹🇼VIP台湾05|台南|移动内网专线, 🇹🇼VIP台湾02|台北|移动内网专线, 🇹🇼VIP台湾04|台北|移动内网专线, 🇹🇼VIP台湾01|台北|移动内网专线, 🇹🇼VIP台湾03|台北|移动内网专线, 🇹🇼VIP台湾05|台北|移动内网专线, 🇹🇼VIP台湾07|台北|移动内网专线, 🇹🇼VIP台湾07|台南|移动内网专线, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Disney+_2.png
+static=HBO Max, proxy, reject, 🇺🇸美国03|纽约|高速中转, 🇺🇸美国02|纽约|高速中转, 🇺🇸美国05|纽约|高速中转, 🇺🇸美国06|纽约|高速中转, 🇺🇸美国07|纽约|高速中转, 🇺🇸美国08|纽约|高速中转, 🇺🇸美国01|费城|高速中转, 🇺🇸美国02|费城|高速中转, 🇺🇸美国03|费城|高速中转, 🇺🇸美国04|费城|高速中转, 🇺🇸美国06|费城|高速中转, 🇺🇸美国08|费城|高速中转, 🇺🇸美国02|洛杉矶|高速中转, 🇺🇸美国03|洛杉矶|高速中转, 🇺🇸美国06|洛杉矶|高速中转, 🇺🇸美国05|洛杉矶|高速中转, 🇺🇸美国04|洛杉矶|高速中转, 🇺🇸美国08|洛杉矶|高速中转, 🇺🇸美国02|旧金山|高速中转, 🇺🇸美国03|旧金山|高速中转, 🇺🇸美国05|旧金山|高速中转, 🇺🇸美国08|旧金山|高速中转, 🇺🇸美国03|纽瓦克|高速中转, 🇺🇸美国02|纽瓦克|高速中转, 🇺🇸美国01|纽瓦克|高速中转, 🇺🇸美国06|纽瓦克|高速中转, 🇺🇸美国07|纽瓦克|高速中转, 🇺🇸美国02|西雅图|高速中转, 🇺🇸美国01|西雅图|高速中转, 🇺🇸美国04|西雅图|高速中转, 🇺🇸美国05|西雅图|高速中转, 🇺🇸美国07|西雅图|高速中转, 🇺🇸美国08|西雅图|高速中转, 🇺🇸美国05|费利蒙|高速中转, 🇺🇸美国08|费利蒙|高速中转, 🇺🇸美国02|达拉斯|高速中转, 🇺🇸美国03|达拉斯|高速中转, 🇺🇸美国06|阿什本|高速中转, 🇺🇸美国07|阿什本|高速中转, 🇺🇸美国08|阿什本|高速中转, 🇺🇸美国01|圣荷西|高速中转, 🇺🇸美国03|圣荷西|高速中转, 🇺🇸美国04|圣荷西|高速中转, 🇺🇸美国06|圣荷西|高速中转, 🇺🇸美国05|圣荷西|高速中转, 🇺🇸美国07|圣荷西|高速中转, 🇺🇸美国08|圣荷西|高速中转, 🇺🇸美国01|芝加哥|高速中转, 🇺🇸美国02|芝加哥|高速中转, 🇺🇸美国03|芝加哥|高速中转, 🇺🇸美国04|芝加哥|高速中转, 🇺🇸美国05|芝加哥|高速中转, 🇺🇸美国06|芝加哥|高速中转, 🇺🇸美国07|芝加哥|高速中转, 🇺🇸美国08|芝加哥|高速中转, 🇺🇸美国05|阿什本|高速中转, 🇺🇸美国04|阿什本|高速中转, 🇭🇰VIP香港01|10G带宽|深港内网专线, 🇭🇰VIP香港08|10G带宽|广港内网专线, 🇭🇰VIP香港07|10G带宽|广港内网专线, 🇭🇰VIP香港06|10G带宽|广港内网专线, 🇭🇰VIP香港05|10G带宽|广港内网专线, 🇭🇰VIP香港04|10G带宽|广港内网专线, 🇭🇰VIP香港03|10G带宽|广港内网专线, 🇭🇰VIP香港01|10G带宽|广港内网专线, 🇭🇰VIP香港08|10G带宽|深港内网专线, 🇭🇰VIP香港07|10G带宽|深港内网专线, 🇭🇰VIP香港04|10G带宽|深港内网专线, 🇭🇰VIP香港03|10G带宽|深港内网专线, 🇭🇰VIP香港05|10G带宽|深港内网专线, 🇭🇰VIP香港02|10G带宽|深港内网专线, 🇭🇰VIP香港06|10G带宽|深港内网专线, 🇭🇰VIP香港02|10G带宽|广港内网专线, 🇭🇰VIP香港01|ICABLE|动态家宽, 🇭🇰VIP香港02|ICABLE|动态家宽, 🇭🇰VIP香港03|ICABLE|动态家宽, 🇭🇰VIP香港04|ICABLE|动态家宽, 🇭🇰VIP香港05|ICABLE|动态家宽, 🇭🇰VIP香港06|ICABLE|动态家宽, 🇭🇰VIP香港07|ICABLE|动态家宽, 🇭🇰VIP香港08|ICABLE|动态家宽, 🇭🇰VIP香港01|HKBN|动态家宽, 🇭🇰VIP香港02|HKBN|动态家宽, 🇭🇰VIP香港03|HKBN|动态家宽, 🇭🇰VIP香港04|HKBN|动态家宽, 🇭🇰VIP香港05|HKBN|动态家宽, 🇭🇰VIP香港06|HKBN|动态家宽, 🇭🇰VIP香港07|HKBN|动态家宽, 🇭🇰VIP香港08|HKBN|动态家宽, 🇭🇰VIP香港01|HGC|动态家宽, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/HBO.png
+static=Gemini, direct, proxy, 🇺🇸USA01|海外用户专用|DirectAccess, 🇺🇸USA02|海外用户专用|DirectAccess, 🇺🇸美国01|纽约|高速中转, 🇺🇸美国02|纽约|高速中转, 🇺🇸美国03|纽约|高速中转, 🇺🇸美国04|纽约|高速中转, 🇺🇸美国05|纽约|高速中转, 🇺🇸美国06|纽约|高速中转, 🇺🇸美国07|纽约|高速中转, 🇺🇸美国08|纽约|高速中转, 🇺🇸美国01|费城|高速中转, 🇺🇸美国03|费城|高速中转, 🇺🇸美国04|费城|高速中转, 🇺🇸美国05|费城|高速中转, 🇺🇸美国06|费城|高速中转, 🇺🇸美国07|费城|高速中转, 🇺🇸美国08|费城|高速中转, 🇺🇸美国01|洛杉矶|高速中转, 🇺🇸美国02|费城|高速中转, 🇺🇸美国02|洛杉矶|高速中转, 🇺🇸美国03|洛杉矶|高速中转, 🇺🇸美国04|洛杉矶|高速中转, 🇺🇸美国05|洛杉矶|高速中转, 🇺🇸美国06|洛杉矶|高速中转, 🇺🇸美国08|洛杉矶|高速中转, 🇺🇸美国01|旧金山|高速中转, 🇺🇸美国02|旧金山|高速中转, 🇺🇸美国03|旧金山|高速中转, 🇺🇸美国04|旧金山|高速中转, 🇺🇸美国07|洛杉矶|高速中转, 🇺🇸美国05|旧金山|高速中转, 🇺🇸美国06|旧金山|高速中转, 🇺🇸美国07|旧金山|高速中转, 🇺🇸美国08|旧金山|高速中转, 🇺🇸美国01|纽瓦克|高速中转, 🇺🇸美国02|纽瓦克|高速中转, 🇺🇸美国03|纽瓦克|高速中转, 🇺🇸美国04|纽瓦克|高速中转, 🇺🇸美国06|纽瓦克|高速中转, 🇺🇸美国05|纽瓦克|高速中转, 🇺🇸美国07|纽瓦克|高速中转, 🇺🇸美国08|纽瓦克|高速中转, 🇺🇸美国01|西雅图|高速中转, 🇺🇸美国02|西雅图|高速中转, 🇺🇸美国03|西雅图|高速中转, 🇺🇸美国04|西雅图|高速中转, 🇺🇸美国05|西雅图|高速中转, 🇺🇸美国07|西雅图|高速中转, 🇺🇸美国08|西雅图|高速中转, 🇺🇸美国01|费利蒙|高速中转, 🇺🇸美国02|费利蒙|高速中转, 🇺🇸美国03|费利蒙|高速中转, 🇺🇸美国04|费利蒙|高速中转, 🇺🇸美国05|费利蒙|高速中转, 🇺🇸美国07|费利蒙|高速中转, 🇺🇸美国08|费利蒙|高速中转, 🇺🇸美国06|西雅图|高速中转, 🇺🇸美国06|费利蒙|高速中转, 🇺🇸美国01|达拉斯|高速中转, 🇺🇸美国02|达拉斯|高速中转, 🇺🇸美国04|达拉斯|高速中转, 🇺🇸美国05|达拉斯|高速中转, 🇺🇸美国06|达拉斯|高速中转, 🇺🇸美国03|达拉斯|高速中转, 🇺🇸美国07|达拉斯|高速中转, 🇺🇸美国01|阿什本|高速中转, 🇺🇸美国08|达拉斯|高速中转, 🇺🇸美国02|阿什本|高速中转, 🇺🇸美国04|阿什本|高速中转, 🇺🇸美国05|阿什本|高速中转, 🇺🇸美国06|阿什本|高速中转, 🇺🇸美国07|阿什本|高速中转, 🇺🇸美国08|阿什本|高速中转, 🇺🇸美国01|圣荷西|高速中转, 🇺🇸美国02|圣荷西|高速中转, 🇺🇸美国03|圣荷西|高速中转, 🇺🇸美国04|圣荷西|高速中转, 🇺🇸美国06|圣荷西|高速中转, 🇺🇸美国05|圣荷西|高速中转, 🇺🇸美国03|阿什本|高速中转, 🇺🇸美国07|圣荷西|高速中转, 🇺🇸美国08|圣荷西|高速中转, 🇺🇸美国01|芝加哥|高速中转, 🇺🇸美国03|芝加哥|高速中转, 🇺🇸美国04|芝加哥|高速中转, 🇺🇸美国08|芝加哥|高速中转, 🇺🇸美国07|芝加哥|高速中转, 🇺🇸美国06|芝加哥|高速中转, 🇺🇸美国02|芝加哥|高速中转, 🇺🇸VIP美国|Verizon|动态家宽|禁止视频, 🇺🇸VIP美国|Frontier|动态家宽|禁止视频, 🇺🇸VIP美国|T-Mobile|移动网络|禁止视频, 🇺🇸美国05|芝加哥|高速中转, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Rainbow.png
+static=Netflix, proxy, Hong Kong, Taiwan, Japan, Korea, United States, 🇭🇰 香港BGP 三网直连1x, 🇨🇳 台湾BGP 中转 02 1.5x, 🇨🇳 台湾BGP 中转 01 1.5x, 🇯🇵 日本BGP 中转 01 1.5x, 🇯🇵 日本BGP 中转 02 1.5x, 🇸🇬 新加坡BGP 中转 01 1.5x, 🇸🇬 新加坡BGP 中转 02 1.5x, 🇭🇰 香港BGP 中转 01 1.5x, 🇭🇰 香港BGP 中转 04 1.5x, 🇭🇰 香港BGP 中转 03 1.5x, 🇭🇰 香港BGP 中转 02 1.5x, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix_Letter.png
+static=Line, direct, proxy, Hong Kong, Japan, Singapore, United States, 🇭🇰 香港宇宙量子专线 2x, 🇺🇸 美国BGP 中转 03 1.5x, 🇺🇸 美国BGP 中转 04 1.5x, 🇺🇸 美国BGP 中转 02 1.5x, 🇺🇸 美国BGP 中转 01 1.5x, 🇨🇳 台湾BGP 中转 01 1.5x, 🇭🇰VIP香港02|10G带宽|深港内网专线, 🇭🇰VIP香港04|10G带宽|深港内网专线, 🇭🇰VIP香港07|10G带宽|深港内网专线, 🇭🇰VIP香港06|10G带宽|广港内网专线, 🇭🇰VIP香港07|10G带宽|广港内网专线, 🇭🇰VIP香港01|ICABLE|动态家宽, 🇭🇰VIP香港02|ICABLE|动态家宽, 🇭🇰VIP香港03|ICABLE|动态家宽, 🇭🇰VIP香港04|ICABLE|动态家宽, 🇭🇰VIP香港05|ICABLE|动态家宽, 🇭🇰 香港BGP 三网直连1x, 🇨🇳 台湾BGP 中转 02 1.5x, 🇯🇵 日本BGP 中转 01 1.5x, 🇯🇵 日本BGP 中转 02 1.5x, 🇸🇬 新加坡BGP 中转 01 1.5x, 🇸🇬 新加坡BGP 中转 02 1.5x, 🇭🇰 香港BGP 中转 01 1.5x, 🇭🇰 香港BGP 中转 02 1.5x, 🇭🇰 香港BGP 中转 03 1.5x, 🇭🇰 香港BGP 中转 04 1.5x, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Line.png
+static=Siri, direct, proxy, 🇺🇸美国01|纽约|高速中转, 🇺🇸美国02|纽约|高速中转, 🇺🇸美国03|纽约|高速中转, 🇺🇸美国04|纽约|高速中转, 🇺🇸美国08|纽约|高速中转, 🇺🇸美国02|费城|高速中转, 🇺🇸美国03|费城|高速中转, 🇺🇸美国07|费城|高速中转, 🇺🇸美国02|洛杉矶|高速中转, 🇺🇸美国04|洛杉矶|高速中转, 🇺🇸美国06|旧金山|高速中转, 🇺🇸美国01|纽瓦克|高速中转, 🇺🇸USA01|海外用户专用|DirectAccess, 🇺🇸USA02|海外用户专用|DirectAccess, 🇺🇸美国05|纽约|高速中转, 🇺🇸美国06|纽约|高速中转, 🇺🇸美国07|纽约|高速中转, 🇺🇸美国01|费城|高速中转, 🇺🇸美国04|费城|高速中转, 🇺🇸美国05|费城|高速中转, 🇺🇸美国06|费城|高速中转, 🇺🇸美国08|费城|高速中转, 🇺🇸美国01|洛杉矶|高速中转, 🇺🇸美国05|洛杉矶|高速中转, 🇺🇸美国03|洛杉矶|高速中转, 🇺🇸美国06|洛杉矶|高速中转, 🇺🇸美国08|洛杉矶|高速中转, 🇺🇸美国01|旧金山|高速中转, 🇺🇸美国02|旧金山|高速中转, 🇺🇸美国03|旧金山|高速中转, 🇺🇸美国04|旧金山|高速中转, 🇺🇸美国05|旧金山|高速中转, 🇺🇸美国07|旧金山|高速中转, 🇺🇸美国08|旧金山|高速中转, 🇺🇸美国02|纽瓦克|高速中转, 🇺🇸美国03|纽瓦克|高速中转, 🇺🇸美国04|纽瓦克|高速中转, 🇺🇸美国05|纽瓦克|高速中转, 🇺🇸美国06|纽瓦克|高速中转, 🇺🇸美国08|纽瓦克|高速中转, 🇺🇸美国01|西雅图|高速中转, 🇺🇸美国02|西雅图|高速中转, 🇺🇸美国03|西雅图|高速中转, 🇺🇸美国07|洛杉矶|高速中转, 🇺🇸美国07|纽瓦克|高速中转, 🇺🇸美国04|西雅图|高速中转, 🇺🇸美国05|西雅图|高速中转, 🇺🇸美国06|西雅图|高速中转, 🇺🇸美国08|西雅图|高速中转, 🇺🇸美国01|费利蒙|高速中转, 🇺🇸美国02|费利蒙|高速中转, 🇺🇸美国07|西雅图|高速中转, 🇺🇸美国03|费利蒙|高速中转, 🇺🇸美国04|费利蒙|高速中转, 🇺🇸美国05|费利蒙|高速中转, 🇺🇸美国06|费利蒙|高速中转, 🇺🇸美国07|费利蒙|高速中转, 🇺🇸美国08|费利蒙|高速中转, 🇺🇸美国01|达拉斯|高速中转, 🇺🇸美国03|达拉斯|高速中转, 🇺🇸美国02|达拉斯|高速中转, 🇺🇸美国04|达拉斯|高速中转, 🇺🇸美国05|达拉斯|高速中转, 🇺🇸美国06|达拉斯|高速中转, 🇺🇸美国08|达拉斯|高速中转, 🇺🇸美国01|阿什本|高速中转, 🇺🇸美国02|阿什本|高速中转, 🇺🇸美国04|阿什本|高速中转, 🇺🇸美国03|阿什本|高速中转, 🇺🇸美国05|阿什本|高速中转, 🇺🇸美国06|阿什本|高速中转, 🇺🇸美国07|阿什本|高速中转, 🇺🇸美国01|圣荷西|高速中转, 🇺🇸美国02|圣荷西|高速中转, 🇺🇸美国03|圣荷西|高速中转, 🇺🇸美国04|圣荷西|高速中转, 🇺🇸美国05|圣荷西|高速中转, 🇺🇸美国06|圣荷西|高速中转, 🇺🇸美国07|圣荷西|高速中转, 🇺🇸美国08|圣荷西|高速中转, 🇺🇸美国01|芝加哥|高速中转, 🇺🇸美国07|达拉斯|高速中转, 🇺🇸美国08|阿什本|高速中转, 🇺🇸美国02|芝加哥|高速中转, 🇺🇸美国03|芝加哥|高速中转, 🇺🇸美国04|芝加哥|高速中转, 🇺🇸美国06|芝加哥|高速中转, 🇺🇸美国07|芝加哥|高速中转, 🇺🇸美国05|芝加哥|高速中转, 🇺🇸美国08|芝加哥|高速中转, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Siri.png
+static=Spark, direct, proxy, 🇺🇸美国08|芝加哥|高速中转, 🇺🇸美国04|芝加哥|高速中转, 🇺🇸美国06|圣荷西|高速中转, 🇺🇸美国04|圣荷西|高速中转, 🇺🇸美国02|圣荷西|高速中转, 🇺🇸美国08|阿什本|高速中转, 🇺🇸美国01|圣荷西|高速中转, 🇺🇸美国07|芝加哥|高速中转, 🇺🇸美国03|芝加哥|高速中转, 🇺🇸VIP美国|Verizon|动态家宽|禁止视频, 🇹🇭VIP泰国|芭提雅|中转|原生, 🇨🇦VIP加拿大|多伦多|中转|原生, 🇺🇸USA02|海外用户专用|DirectAccess, 🇺🇸USA01|海外用户专用|DirectAccess, 🇺🇸VIP美国02|联通内网专线, 🇺🇸VIP美国01|联通内网专线, 🇺🇸VIP美国04|联通内网专线, 🇺🇸VIP美国06|联通内网专线, 🇺🇸VIP美国07|联通内网专线, 🇺🇸VIP美国08|联通内网专线, 🇺🇸VIP美国05|联通内网专线, 🇺🇸VIP美国03|联通内网专线, 🇭🇰VIP香港05|HGC|动态家宽, 🇭🇰VIP香港07|HGC|动态家宽, 🇭🇰VIP香港01|CERA|移动内网专线, 🇭🇰VIP香港02|CERA|移动内网专线, 🇭🇰VIP香港04|CERA|移动内网专线, 🇭🇰VIP香港06|CERA|移动内网专线, 🇭🇰VIP香港03|DMIT|移动内网专线, 🇭🇰VIP香港04|DMIT|移动内网专线, 🇭🇰VIP香港06|DMIT|移动内网专线, 🇭🇰VIP香港07|DMIT|移动内网专线, 🇭🇰VIP香港01|Misaka|移动内网专线, 🇭🇰VIP香港04|Misaka|移动内网专线, 🇭🇰VIP香港05|Misaka|移动内网专线, 🇭🇰VIP香港07|Misaka|移动内网专线, 🇭🇰VIP香港06|Misaka|移动内网专线, 🇭🇰VIP香港02|Misaka|移动内网专线, 🇭🇰VIP香港05|DMIT|移动内网专线, 🇹🇼VIP台湾02|台南|移动内网专线, 🇹🇼VIP台湾08|高雄|移动内网专线, 🇺🇸美国04|纽约|高速中转, 🇺🇸美国06|纽约|高速中转, 🇺🇸美国07|纽约|高速中转, 🇺🇸美国03|纽约|高速中转, 🇺🇸美国02|纽约|高速中转, 🇺🇸美国01|洛杉矶|高速中转, 🇺🇸美国08|费城|高速中转, 🇺🇸美国07|费城|高速中转, 🇺🇸美国05|费城|高速中转, 🇺🇸美国04|费城|高速中转, 🇺🇸美国03|费城|高速中转, 🇺🇸美国08|洛杉矶|高速中转, 🇺🇸美国07|洛杉矶|高速中转, 🇺🇸美国06|洛杉矶|高速中转, 🇺🇸美国04|洛杉矶|高速中转, 🇺🇸美国03|洛杉矶|高速中转, 🇺🇸美国01|纽瓦克|高速中转, 🇺🇸美国08|旧金山|高速中转, 🇺🇸美国06|旧金山|高速中转, 🇺🇸美国05|旧金山|高速中转, 🇺🇸美国03|旧金山|高速中转, 🇺🇸美国02|旧金山|高速中转, 🇺🇸美国06|纽瓦克|高速中转, 🇺🇸美国07|纽瓦克|高速中转, 🇺🇸美国02|西雅图|高速中转, 🇺🇸美国03|西雅图|高速中转, 🇺🇸美国05|费利蒙|高速中转, 🇺🇸美国03|费利蒙|高速中转, 🇺🇸美国02|费利蒙|高速中转, 🇺🇸美国08|西雅图|高速中转, 🇺🇸美国02|阿什本|高速中转, 🇺🇸美国01|阿什本|高速中转, 🇺🇸美国07|达拉斯|高速中转, 🇺🇸美国05|达拉斯|高速中转, 🇺🇸VIP美国|Frontier|动态家宽|禁止视频, 🇺🇸美国06|芝加哥|高速中转, 🇺🇸美国02|芝加哥|高速中转, 🇺🇸美国01|芝加哥|高速中转, 🇰🇭VIP柬埔寨|西哈努克|中转|原生, 🇺🇸VIP美国|Starlink|卫星网络|禁止视频, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spark.png
+static=Telegram, proxy, Hong Kong, Taiwan, Japan, Korea, Singapore, United States, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
+static=Twitter, proxy, Hong Kong, Taiwan, Japan, Korea, Singapore, United States, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png
+static=YouTube, Hong Kong, Taiwan, Japan, Korea, Singapore, United States, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
+static=Spotify, direct, proxy, Hong Kong, Singapore, United States, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
+static=AdBlock, direct, reject, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Advertising.png
+static=Final, proxy, direct, 🇭🇰 香港BGP 三网直连1x, 🇺🇸 美国BGP 中转 02 1.5x, 🇺🇸 美国BGP 中转 03 1.5x, 🇺🇸 美国BGP 中转 01 1.5x, 🇺🇸 美国BGP 中转 04 1.5x, 🇨🇳 台湾BGP 中转 01 1.5x, 🇨🇳 台湾BGP 中转 02 1.5x, 🇯🇵 日本BGP 中转 01 1.5x, 🇯🇵 日本BGP 中转 02 1.5x, 🇸🇬 新加坡BGP 中转 01 1.5x, 🇸🇬 新加坡BGP 中转 02 1.5x, 🇭🇰 香港BGP 中转 01 1.5x, 🇭🇰 香港BGP 中转 02 1.5x, 🇭🇰 香港BGP 中转 03 1.5x, 🇭🇰 香港BGP 中转 04 1.5x, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
+url-latency-benchmark=1.5X, server-tag-regex=1.5x, check-interval=600, tolerance=0, alive-checking=false, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Dler.png
+url-latency-benchmark=VIP, server-tag-regex=VIP, check-interval=600, tolerance=0, alive-checking=false, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/VIP.png
+url-latency-benchmark=Hong Kong, server-tag-regex=(?=.*(港|🇭🇰|香港|HK|(?i)Hong))^((?!(台|日|韩|新|美)).)*$, check-interval=1200, tolerance=0, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
+url-latency-benchmark=Taiwan, server-tag-regex=(?=.*(台|🇹🇼|臺|台湾|台灣|TW|(?i)Taiwan))^((?!(港|日|韩|新|美)).)*$, check-interval=1200, tolerance=0, alive-checking=false, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Taiwan.png
+url-latency-benchmark=Japan, server-tag-regex=(?=.*(日|🇯🇵|日本|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$, check-interval=1200, tolerance=0, alive-checking=false, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/lige47/Japan.png
+url-latency-benchmark=Korea, server-tag-regex=(?=.*(韩|🇰🇷|韓|韩国|韓國|南朝鲜|KR|(?i)Korean))^((?!(港|台|日|新|美)).)*$, check-interval=1800, tolerance=10, alive-checking=false, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Korea.png
+url-latency-benchmark=Singapore, server-tag-regex=(?=.*(新|🇸🇬|狮|獅|SG|(?i)Singapore))^((?!(港|台|日|韩|美)).)*$, check-interval=600, tolerance=0, alive-checking=false, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
+url-latency-benchmark=United States, server-tag-regex=(?=.*(美|🇺🇸|美国|美國|US|(?i)States|American))^((?!(港|台|日|韩|新)).)*$, check-interval=600, tolerance=0, alive-checking=false, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
+
+
+[server_local]
+# 本地服务器订阅
+
+
+[server_remote]
+
+
+[filter_remote]
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/QuantumultX/GitHub/GitHub.list, tag=Github, force-policy=proxy, update-interval=172800, opt-parser=true, enabled=true
+# 远程分流规则
+
+https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/filter/fenliu.list, tag=去广告, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/filter/fenliuxiuzheng.list, tag=分流修正, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-QuantumultX.list, tag=Ads, force-policy=AdBlock, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Line/Line.list, tag=Line, force-policy=Hong Kong, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Disney/Disney.list, tag=Disney+, force-policy=proxy, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/EliDoves/Proxy/refs/heads/main/QuantumultX/Rules/Media/HBO%20MAX.list, tag=HBO Max, force-policy=Hong Kong, update-interval=172800, opt-parser=true, enabled=true
+https://github.com/Repcz/Tool/raw/X/QuantumultX/Rules/OpenAI.list, tag=OpenAI, force-policy=ChatGPT, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/LOWERTOP/Shadowrocket-First/refs/heads/main/Talkatone.sgmodule, tag=Talkatone, force-policy=United States, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list, tag=Mainland (国内网站), force-policy=国内网站, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list, tag=Outside (境外网站), force-policy=proxy, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list, tag=Apple (Apple服务), force-policy=Apple, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Netflix/Netflix.list, tag=Netflix（奈飞）, force-policy=Netflix, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/YouTube/YouTube.list, tag=YouTube（油管）, force-policy=YouTube, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Spotify/Spotify.list, tag=Spotify（声破天）, force-policy=Spotify, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/OpenAI/OpenAI.list, tag=ChatGPT（狗屁通）, force-policy=ChatGPT, update-interval=86400, opt-parser=true, inserted-resource=true, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Telegram/Telegram.list, tag=Telegram（电报）, force-policy=Telegram, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Twitter/Twitter.list, tag=Twitter（推特）, force-policy=Twitter, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Advertising/Advertising.list, tag=AdBlock (广告拦截), force-policy=AdBlock, update-interval=604800, opt-parser=false, enabled=true
+
+[filter_local]
+# 本地分流规则
+
+host, glados.network, Oversea
+host, glados.rocks, Oversea
+host, update.glados-config.com, direct
+
+# 避免迅雷版权问题
+host, hub5idx.v6.shub.sandai.net, reject
+host, hub5emu.v6.shub.sandai.net, reject
+host, hub5btmain.v6.shub.sandai.net, reject
+
+HOST-SUFFIX,95599.cn,direct
+HOST-SUFFIX,abchina.com,direct
+HOST-SUFFIX,bscabank.com,direct
+HOST-SUFFIX,openaboc.cn,direct
+HOST-SUFFIX,openaboc.com,direct
+HOST-SUFFIX,openaboc.com.cn,direct
+ip-cidr, 180.76.76.200/32, reject
+host-suffix, local, direct
+host-keyword, yattazen, proxy
+ip-cidr, 10.0.0.0/8, direct
+ip-cidr, 17.0.0.0/8, direct
+ip-cidr, 100.64.0.0/10, direct
+ip-cidr, 127.0.0.0/8, direct
+ip-cidr, 172.16.0.0/12, direct
+ip-cidr, 192.168.0.0/16, direct
+ip-cidr, 224.0.0.0/24, direct
+ip-cidr, 182.254.116.0/24, direct
+geoip, cn, direct
+final, Final
+
+
+[rewrite_local]
+# 本地复写规则
+
+
+[rewrite_remote]
+https://raw.githubusercontent.com/chxm1023/Script_X/main/Collections.conf, tag=叮当猫解锁合集, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/afengye/QX/main/crack.js, tag=枫叶合集Crack, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes.js, tag=chxm1023 iTunes, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js, tag=Revenuecat解锁合集, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/itunes/Mindllama.js, tag=Mindllama, update-interval=172800, opt-parser=true, enabled=true
+https://gist.githubusercontent.com/Yu9191/5e8501a4d159d49cecf3ed2f5051d0d8/raw/b6b05dc22700c3eff9c3ec2788bc59c3d5e83310/Goodnotes6.sgmodule, tag=GoodNotes, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/rewrite/chongxie.txt, tag=去广告重写, update-interval=172800, opt-parser=true, enabled=true
+https://github.com/fmz200/wool_scripts/raw/main/QuantumultX/rewrite/cleanup.snippet, tag=小程序净化, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.conf, tag=Spotify解锁, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/Yu9191/Rewrite/main/Revenuecat.js, tag=yu9191 Revenuecat.js, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/app2smile/rules/master/module/adsense.conf, tag=广告联盟, update-interval=172800, opt-parser=true, enabled=true
+https://github.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=Boxjs, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/sub-store-org/Sub-Store/refs/heads/master/config/QX.snippet, tag=Sub-store, update-interval=172800, opt-parser=true, enabled=true
+https://whatshub.top/rewrite/adultra.conf, tag=去广告融合, update-interval=172800, opt-parser=true, enabled=true
+https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/XiaoHongShu.conf, tag=小红书净化+去水印, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/QuantumultX/Redirect/Redirect.conf, tag=谷歌重定向, update-interval=172800, opt-parser=true, enabled=true
+
+
+[task_local]
+event-interaction https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/nf-ui-check.js, tag=Netflix 查询, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix_Letter.png, enabled=true
+event-interaction https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/disney-ui-check.js, tag=Disneyᐩ 查询, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Disney.png, enabled=true
+# 定时任务，UI交互脚本，网络切换脚本配置
+
+# 流媒体解锁查询
+event-interaction https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/streaming-ui-check.js, tag=流媒体解锁查询, img-url=arrowtriangle.right.square.system, enabled=true
+
+# GeoIP 查询
+event-interaction https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/geo_location.js, tag=GeoIP 查询, img-url=location.fill.viewfinder.system
+
+# 网络信息查询
+event-interaction https://raw.githubusercontent.com/xream/scripts/main/surge/modules/network-info/net-lsp-x.js, tag=网络信息查询, img-url=link.circle.system, enabled=true
+
+[http_backend]
+# 本地HTTP服务器
+
+
+[mitm]
