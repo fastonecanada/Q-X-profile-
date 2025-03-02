@@ -1,0 +1,20 @@
+#!name = 酷我音乐 & 酷我畅听
+#!desc = 〔 酷我音乐&酷我畅听 〕全功能破解
+#!author = 影子[https://www.napi.ltd]
+#!homepage = https://napi.ltd
+#!openUrl = https://napi.ltd
+#!icon = https://static.napi.ltd/Image/KuWo.png
+#!date = 2025-02-26
+#!category=🥷🏿 影子
+
+
+[Map Local]
+^.*?(ad(.*)?\.tencentmusic\.com|kuwo\.cn\/((EcomResource|(Mobile)?Ad)Serv(er|ice)|(vip|(open)?api)?\/v\d\/(user\/freeMode\/(?!message)|album\/adBar|app\/(newMenuList\/menuListInfo|pasterAdvert\/config)|api\/advert\/(iListen|album)|operate\/pop\/info|-online\/sign\/new\/playEntryV1-)|kuwopay\/vip-tab\/page\/floatbox)) data-type=text data="" status-code=200
+
+
+[Script]
+酷我音乐 = type=http-response,pattern=^(?!.*img).*?(abt-kuwo\.tencentmusic\.com|kuwo\.cn)(/vip|/(open)?api)?(/enc.*?signver|/(v\d/)?(pay/app/getConfigInfo|user/(freeMode/message|vip\?(vers|apiVersion|platform|op\=ui|_t))|app/startup/config|theme\?op=gd|api/((pay/)?(user/info|payInfo/kwplayer/payMiniBar)|advert/myPage)|tingshu/index/radio|operate/homePage|sysinfo\?op\=getRePayAndDoPayBox(New)?&useNewHeadShow|recommend/(daily/main|songlist/getRecSonglist))|/kuwo/ui/info$|/kuwopay\/personal\/cells|/pay/viptab/index\.html|/kuwopay/vip-tab/(setting|page/cells)|/a\.p($|\?newver\=\d$|.*?op\=(getvip|policy_shortvideo)|.*?ptype\=vip)|/commercia/vip/(player/getStyleListByModel|hanger/wear)|/mobi\.s\?f\=kwxs|/music\.pay\?newver\=\d$|/basedata\.s\?type\=get_album_info|/mgxh\.s\?user),requires-body=1,max-size=0,binary-body-mode=0,timeout=60,debug=1,script-path=https://napi.ltd/script/Worker/KuWo.js
+
+
+[MITM]
+hostname = %APPEND% *.kuwo.cn, *.tencentmusic.com
